@@ -596,7 +596,7 @@ footer nav {
         margin: 0 auto;
     }
     header, .about, .features, .requestments, .quotes, footer{
-        max-width: 767px;
+        max-width:1024px;
         min-width: 100px;
         width: 100%;
         padding-top: 20px;
