@@ -739,11 +739,7 @@ footer nav {
         display: none;
         }
     .about-menu{
-        top: 90%;
-        left: 15%;
-    }
-    .about-menu-item{
-        margin-left: 30px;
+        display: none;
     }
 
  /* -----------------features-------------- */
