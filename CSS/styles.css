@@ -741,6 +741,9 @@ footer nav {
     .about-menu{
         display: none;
     }
+    .about-menu-item{
+        display: none;
+    }
 
  /* -----------------features-------------- */
 
