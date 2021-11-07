@@ -928,7 +928,8 @@ footer nav {
     }
     .plasaholder-text{
         top: 25%;
-        left: 25%;
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     /* ---------------- Rest of Footer-------------- */
@@ -972,3 +973,11 @@ footer nav {
         line-height: 2rem;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .plasaholder-text{
+        top: 25%;
+        left: 25%;
+    }
+}
+
