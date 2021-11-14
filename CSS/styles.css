@@ -199,7 +199,7 @@ header h3{
 }
 .action-text1{
     margin-top: 60px;
-    margin-left: 220px;
+    margin-left: 200px;
     width: 35%;
     text-align: justify;
 }
@@ -209,7 +209,7 @@ header h3{
 }
 .action-text2{
     margin-top: 30px;
-    margin-left: 220px;
+    margin-left: 200px;
     width: 35%;
     text-align: justify;
 }
@@ -241,9 +241,7 @@ header h3{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: absolute;
-    top: 73%;
-    left: 57%;
+    margin-top: -3rem;
     z-index: 15;
 }
 .about-menu-item{
@@ -252,8 +250,11 @@ header h3{
     border: 1px solid white;
     border-radius: 50%;
     background-color: transparent;
-    margin-left: 50px;
+    margin-left: 40px;
     transition: all .4s linear;
+}
+.about-menu-item:first-child{
+    margin-left: 0;
 }
 .about-menu-item:hover{
     background-color: white;
@@ -411,7 +412,7 @@ header h3{
     height: 60px;
     line-height: 60px;
     text-align: center;
-    width: 40%;
+    width: 60%;
 }
 .quotes-link{
     text-transform: none;
@@ -491,7 +492,7 @@ footer{
 }
 .newsletter-content input[type="email"]{
     height: 60px;
-    width: 350px;
+    width: 300px;
     background-color: rgba(255, 255, 255, 0.08);
     border-radius: 5px;
     position: relative;
@@ -512,7 +513,6 @@ footer{
     font-weight: 400;
     font-size: 1.4rem;
     color: #ccc;
-
     position: absolute;
     top: 10%;
     left: 10%;
@@ -580,10 +580,150 @@ footer nav {
     font-size: 1.4rem; 
     color: #fff;
 }
+  
+ 
 
-/* -----------------For spartphones-------------- */
+/* -----------------For small screens-------------- */
+@media screen and (max-width: 1200px) {
+    header, .about, .features, .requestments, .quotes, footer{
+        min-width: 992px;
+    }
+    /* ---------header------------ */
+.nav-item2{
+    margin-left: 8rem;
+}
+.lang{
+    margin-left: 8rem;
+}
+.header-btn{
+    width: 40%;
+}
 
-@media screen and (max-width: 1024px) {
+/* ---------section about--------- */
+
+.about h3{
+    margin-left: 4.5rem;
+}
+.about h2{
+    margin-left: 4.5rem;
+}
+.underline{
+    margin-left: 4.5rem;
+}
+.action-text1{
+    margin-left: 7rem;
+}
+
+.action-text2{
+    margin-left: 7rem;
+}
+
+/* -----------------features-------------- */
+
+.features h3{
+    margin-left: 69rem;
+}
+.features h2{
+    margin-left: 69rem;
+}
+.features-list{
+    margin-left: 69rem;
+}
+
+/* -----------------quotes-------------- */
+
+.quotes-info p{
+    width: 80%;
+    margin-top: 3rem;
+}
+.quotes-infp-btn{
+    width: 80%;
+}
+.quot-card1 ul li:last-child{
+    margin-left: 180px;
+}
+.quot-card2 ul li:last-child{
+    margin-left: 100px;
+}
+.quot-card3 ul li:last-child{
+    margin-left: 100px;
+}
+
+/* ----------------Footer-------------- */
+
+.newsletter-img{
+    margin-left: 100px;
+    margin-right: 50px;
+}
+.newsletter-content input[type="email"]{
+    width: 25rem;
+}
+.newsletter-content input[type="submit"]{
+    width: 17rem;
+}
+
+/* ---------------- Rest of Footer-------------- */
+
+.footer-nav-item2{
+    margin-left: 10rem;
+}
+.footer-nav-item7{
+    margin-left: 5rem;
+}
+}
+
+/* ---------------- Some sections-------------- */
+
+@media screen and (max-width:1050px) {
+    .about h3{
+        margin-left: 2rem;
+    }
+    .about h2{
+        margin-left: 2rem;
+    }
+    .underline{
+        margin-left: 2rem;
+    }
+    .action-text1{
+        margin-left: 3rem;
+    }
+    .action-text2{
+        margin-left: 3rem;
+    }
+    .about-img1{
+        top: 10%;
+        right: 8%;
+    }
+    .about-img2{
+        top: 15%;
+        right: 6%;
+    }
+    .about-img3{
+        top: 20%;
+        right: 4%;
+    }
+    .about-img4{
+        top: 50%;
+        right: 1%;
+    }
+    .features-circles-items:last-child{
+        margin-top: 9rem;
+    }
+    .quot-card1 ul li:last-child{
+        margin-left: 100px;
+    }
+    .quot-card2 ul li:last-child{
+        margin-left: 50px;
+    }
+    .quot-card3 ul li:last-child{
+        margin-left: 50px;
+    }
+}
+
+
+/* -----------------For smartphones-------------- */
+
+@media screen and (max-width: 992px) {
     /* -----------------Commun settings-------------- */
     h1, h2{
         font-size: 6rem;
@@ -727,6 +867,10 @@ footer nav {
         margin: 0 auto;
         text-align: center;
         margin-top: 20px;
+    }
+    .about-img1 img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
     .about-img2{
@@ -738,12 +882,6 @@ footer nav {
     .about-img4{
         display: none;
         }
-    .about-menu{
-        display: none;
-    }
-    .about-menu-item{
-        display: none;
-    }
 
  /* -----------------features-------------- */
 
@@ -857,16 +995,16 @@ footer nav {
         padding: 10px;
     }
     .quot-card ul li:first-child{
-        margin-right: 15px;
+        margin-right: 17px;
     }
     .quot-card1 ul li:last-child{
-        margin-left: 15px;
+        margin-left: 35rem;
     }
     .quot-card2 ul li:last-child{
-        margin-left: 15px;
+        margin-left: 35rem;
     }
     .quot-card3 ul li:last-child{
-        margin-left: 15px;
+        margin-left: 32rem;
     }
     .quot-card1{
         margin-right: inherit;
@@ -877,6 +1015,7 @@ footer nav {
     .quot-card3{
         margin-right: inherit;
     }
+    
 
       /* -------------------fuuter---------------- */
 
@@ -926,8 +1065,10 @@ footer nav {
         margin-top: 20px;
     }
     .newsletter-content input[type="email"]::placeholder{
+        text-align: center;
         top: 10%;
-        left: 35%;
+        left: 50%;
+        transform: translateX(-50%)
     }
     .plasaholder-text{
         top: 25%;
@@ -977,10 +1118,15 @@ footer nav {
     }
 }
 
-@media screen and (max-width: 576px) {
-    .plasaholder-text{
-        top: 25%;
-        left: 25%;
+    /* ---------------- For little phones-------------- */
+@media screen and (max-width: 555px) {
+    .quot-card1 ul li:last-child{
+        margin-left: 170px;
+    }
+    .quot-card2 ul li:last-child{
+        margin-left: 160px;
+    }
+    .quot-card3 ul li:last-child{
+        margin-left: 120px;
     }
 }
-
