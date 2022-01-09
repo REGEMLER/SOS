@@ -65,6 +65,7 @@ header, .about, .features, .requestments, .quotes, footer{
     overflow-x: hidden; 
 }
 
+
 /* ---------header------------ */
 
 header{
@@ -74,7 +75,7 @@ header{
     background-position: center;
     padding-top: 40px;
 }
-#header_menu, .toggle{
+.toggle{
     display: none;
 }
 header nav {
@@ -770,12 +771,7 @@ footer nav {
         text-align: center;
         justify-content: space-around;
     }
-    #header_menu:checked + label .header-menu{
-        height: 200px;
-        opacity: 1;
-        visibility: visible;
-        transition: all .7s linear;
-    }
+
     .header-menu li{
         margin-right: 0;
         text-align: center;
