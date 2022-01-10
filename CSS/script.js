@@ -1,3 +1,4 @@
+//Гамбергер
 const toggler = document.getElementById(`toggle`);
 
 const menu = document.getElementById(`header-menu`);
@@ -13,3 +14,12 @@ toggler.addEventListener(`click`, () =>{
         menu.style.visibility = `visible`;
     }
 })
+
+
+//Градиент
+const quotes = document.getElementById(`quotes`);
+quotes.addEventListener('mousemove', function ({ offsetX, offsetY}) {
+    this.style.backgroundImage = `radial-gradient(at ${offsetX}px ${offsetY}px, white, black)`;
+});
+
+
