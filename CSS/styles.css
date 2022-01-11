@@ -244,7 +244,7 @@ header h3{
     align-items: center;
     justify-content: space-around;
     margin-top: -3rem;
-    z-index: 15;
+    z-index: 50;
 }
 .about-menu-item{
     width: 20px;
@@ -1126,4 +1126,11 @@ footer nav {
     .quot-card3 ul li:last-child{
         margin-left: 120px;
     }
+}
+
+
+    /* ---------------- For slider-------------- */
+.about-img_active{
+    z-index: 40;
+    top: 10%;
 }
